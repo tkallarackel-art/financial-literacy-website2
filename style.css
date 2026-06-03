@@ -568,22 +568,25 @@ h2{
   }
 
  
-  
   .row{
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 30px 15px;
-    text-align: center;
-    gap: 25px;
+  display: flex;
+   flex-direction: column;
+   text-align: center;
+   padding: 30px 15px;
+   gap: 25px;
   }
 
-  .row img{
+  .row .image{
+    order:2;
     width: 100%;
-    height:300px;
+    height: 450px;
     object-fit: cover;
-    grid-row: 2;
+    object-position: center;
   }
 
+  .row .text{
+    order:1
+  }
 
   /***********************LESSON GRID*******************/
  .parent {
